@@ -4,7 +4,7 @@ import { AiFillGithub } from "react-icons/ai";
 export const links = [
   {
     id: 1,
-    url: "#main",
+    url: "#nav",
     text: "Início",
   },
   {

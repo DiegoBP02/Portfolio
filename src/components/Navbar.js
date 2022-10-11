@@ -17,7 +17,7 @@ const Navbar = () => {
     }
   }, [showLinks]);
   return (
-    <Wrapper id="main">
+    <Wrapper id="nav">
       <nav>
         <div className="nav-center">
           <div className="nav-header">
@@ -72,7 +72,7 @@ const Wrapper = styled.div`
   }
   .nav-toggle {
     font-size: 1.5rem;
-    color: var(--clr-primary-5);
+    color: #d23669;
     background: transparent;
     border-color: transparent;
     transition: var(--transition);
