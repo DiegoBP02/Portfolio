@@ -10,7 +10,9 @@ const Project1 = () => {
       <h1>Projetos</h1>
       <div className="section-center project">
         <div>
-          <img src={img} alt="" className="project-img" />
+          <a href="https://animescomplete-reactjs.netlify.app" target="_blank">
+            <img src={img} alt="" className="project-img" />
+          </a>
         </div>
         <div className="project-desc">
           <p className="title">Animes Coding</p>

@@ -9,7 +9,12 @@ const Project3 = () => {
     <Wrapper>
       <div className="section-center project">
         <div>
-          <img src={img} alt="" className="project-img" />
+          <a
+            href="https://github-search-learning-reactjs.netlify.app"
+            target="_blank"
+          >
+            <img src={img} alt="" className="project-img" />
+          </a>
         </div>
         <div className="project-desc">
           <p className="title">GitHub User</p>

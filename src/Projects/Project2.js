@@ -43,7 +43,9 @@ const Project2 = () => {
           </p>
         </div>
         <div>
-          <img src={img} alt="" className="project-img" />
+          <a href="https://comfy-reactjs.netlify.app" target="_blank">
+            <img src={img} alt="" className="project-img" />
+          </a>
         </div>
       </div>
     </Wrapper>
