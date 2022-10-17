@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { AiFillGithub } from "react-icons/ai";
 import { MdMonitor } from "react-icons/md";
 import img from "../images/fotoAnime.png";
+import { pr1 } from "../Components/datas";
 
 const Project1 = () => {
   return (
@@ -36,26 +37,15 @@ const Project1 = () => {
               </a>
             </div>
           </div>
-          <p className="feat">
-            Página que permite a busca de vários animes, redirecionando o
-            usuário ao MyAnimeList.
-          </p>
-          <p className="desc">
-            <h5>Características</h5>
-          </p>
-          <p className="feat">
-            Os dados são obtidos através da API "JIKAN API" e podem ser exibidos
-            das seguintes formas: buscar um anime pelo nome, exibir os mais
-            populares, mais bem avaliados e mais favoritados.
-          </p>
-          <p className="desc">
-            <h5>Desafios</h5>
-          </p>
-          <p className="feat">
-            Aprimorar a compreensão sobre documentações de APIs e,
-            principalmente, realizar um projeto sozinho, sem a presença habitual
-            de um tutor ensinando passo a passo.
-          </p>
+          {pr1.map((msg) => {
+            const { feat, desc } = msg;
+            return (
+              <>
+                {feat ? <p className="feat">{feat}</p> : null}
+                {desc ? <p className="desc">{desc}</p> : null}
+              </>
+            );
+          })}
         </div>
       </div>
     </Wrapper>

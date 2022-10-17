@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { AiFillGithub } from "react-icons/ai";
 import { MdMonitor } from "react-icons/md";
 import img from "../images/fotoGithub.png";
+import { pr3 } from "../Components/datas";
 
 const Project3 = () => {
   return (
@@ -32,25 +33,15 @@ const Project3 = () => {
               </a>
             </div>
           </div>
-          <p className="feat">
-            Página que exibe informações do perfil de um usuário do GitHub.
-          </p>
-          <p className="desc">
-            <h5>Características</h5>
-          </p>
-          <p className="feat">
-            Necessário se logar para acessar a página, sistema feito utilizando
-            Auth0. Projeto exibe as informações do usuário pesquisado, em que
-            algumas delas são exibidas na forma de gráficos, provenientes da
-            plataforma FusionCharts.
-          </p>
-          <p className="desc">
-            <h5>Desafios</h5>
-          </p>
-          <p className="feat">
-            Realizar a integração ao sistema de registro Auth0 e compreender a
-            documentação do FusionCharts.
-          </p>
+          {pr3.map((msg) => {
+            const { feat, desc } = msg;
+            return (
+              <>
+                {feat ? <p className="feat">{feat}</p> : null}
+                {desc ? <p className="desc">{desc}</p> : null}
+              </>
+            );
+          })}
         </div>
       </div>
     </Wrapper>

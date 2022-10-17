@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import { FaBars, FaTwitter } from "react-icons/fa";
-import { links, social } from "./data";
+import { links, social } from "../Components/data";
 import styled from "styled-components";
 
 const Navbar = () => {

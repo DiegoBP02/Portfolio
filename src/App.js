@@ -1,12 +1,12 @@
 import React from "react";
-import Particles from "./components/Particles";
-import Navbar from "./components/Navbar";
-import Main from "./components/Main";
-import About from "./components/About";
-import Skills from "./components/Skills";
-import Portfolio from "./components/Portfolio";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
+import Particles from "./MainComponents/Particles";
+import Navbar from "./MainComponents/Navbar";
+import Main from "./MainComponents/Main";
+import About from "./MainComponents/About";
+import Skills from "./MainComponents/Skills";
+import Portfolio from "./MainComponents/Portfolio";
+import Contact from "./MainComponents/Contact";
+import Footer from "./MainComponents/Footer";
 
 function App() {
   return (

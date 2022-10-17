@@ -1,5 +1,5 @@
 import React from "react";
-import { FaBehance, FaFacebook, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
 import { AiFillGithub } from "react-icons/ai";
 export const links = [
   {

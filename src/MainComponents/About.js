@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import img from "../images/ft2.png";
+import { about } from "../Components/datas";
 
 const About = () => {
   return (
@@ -13,19 +14,10 @@ const About = () => {
           <img src={img} alt="dev" className="img-about" />
         </div>
         <div className="about-text">
-          <p>
-            Meu nome é Diego Batista, tenho 18 anos e estou estudando para me
-            tornar um Desenvolvedor FullStack.
-          </p>
-          <p>
-            O escopo das minhas habilidades é majoritariamente desenvolvimento
-            no frontend, baseando-se no desenvolvimento web utilizando React.
-            Além disso, tenho experiência em HTML, CSS e JavaScript.
-          </p>
-          <p>
-            Estou sempre aberto a me adaptar e trabalhar em novas habilidades e
-            tecnologias.
-          </p>
+          {about.map((msg, index) => {
+            const { txt } = msg;
+            return <p>{txt}</p>;
+          })}
         </div>
       </div>
     </Wrapper>

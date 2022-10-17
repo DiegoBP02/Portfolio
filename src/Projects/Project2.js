@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { AiFillGithub } from "react-icons/ai";
 import { MdMonitor } from "react-icons/md";
 import img from "../images/fotoComfy.png";
+import { pr2 } from "../Components/datas";
 
 const Project2 = () => {
   return (
@@ -24,23 +25,16 @@ const Project2 = () => {
               </a>
             </div>
           </div>
-          <p className="feat">Site de um e-commerce completo.</p>
-          <p className="desc">
-            <h5>Características</h5>
-          </p>
-          <p className="feat">
-            É possível adicionar um método de pagamento, em que o usuário
-            precisa estar logado para prosseguir com a compra. Possível filtrar
-            e alterar a ordenação dos produtos. Além disso, há um carrinho de
-            compras, sendo possível selecionar os itens por suas cores.
-          </p>
-          <p className="desc">
-            <h5>Desafios</h5>
-          </p>
-          <p className="feat">
-            Configurar o sistema de pagamento da Stripe e lidar com múltiplos
-            contexts e reducers.
-          </p>
+          <p className="feat"></p>
+          {pr2.map((msg) => {
+            const { feat, desc } = msg;
+            return (
+              <>
+                {feat ? <p className="feat">{feat}</p> : null}
+                {desc ? <p className="desc">{desc}</p> : null}
+              </>
+            );
+          })}
         </div>
         <div>
           <a href="https://comfy-reactjs.netlify.app" target="_blank">
