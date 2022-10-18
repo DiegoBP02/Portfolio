@@ -60,18 +60,19 @@ export const pr2 = [
 export const pr3 = [
   {
     id: 1,
-    feat: "Página que exibe informações do perfil de um usuário do GitHub.",
+    feat:
+      "Página que permite a postagem de vagas de trabalho e editá-las, podendo filtrar as vagas e exibí-las em dois gráficos.",
     desc: "Características",
   },
   {
     id: 2,
     feat:
-      " Necessário se logar para acessar a página, sistema feito utilizando Auth0. Projeto exibe as informações do usuário pesquisado, em que algumas delas são exibidas na forma de gráficos, provenientes da plataforma FusionCharts.",
+      " Jobster é um pequeno projeto que permite o usuário criar vagas, postá-las e editá-las, definindo o tipo e o estado de cada. Possui a funcionalidade de se logar/registrar através do uso de uma RestAPI. Além disso, possui dois gráficos informando a quantidade de vagas postadas por mês e uma página que permite o usuário alterar os dados do seu perfil.",
     desc: "Desafios",
   },
   {
     id: 3,
     feat:
-      "Realizar a integração ao sistema de registro Auth0 e compreender a documentação do FusionCharts.",
+      "Lidar com o uso ostensivo do Redux para várias funcionalidades diferentes e compreender o consumo da API através do createAsyncThunk.",
   },
 ];

@@ -6,9 +6,7 @@ import { about } from "../Components/datas";
 const About = () => {
   return (
     <Wrapper id="about">
-      <p className="title">
-        <h1>Sobre mim</h1>
-      </p>
+      <h1>Sobre mim</h1>
       <div className="section-center container">
         <div className="img">
           <img src={img} alt="dev" className="img-about" />
@@ -16,7 +14,7 @@ const About = () => {
         <div className="about-text">
           {about.map((msg, index) => {
             const { txt } = msg;
-            return <p>{txt}</p>;
+            return <p key={index}>{txt}</p>;
           })}
         </div>
       </div>
@@ -31,7 +29,7 @@ const Wrapper = styled.div`
     justify-content: space-evenly;
     align-items: center;
   }
-  .title h1 {
+  h1 {
     margin-top: 3rem;
     text-align: center;
   }

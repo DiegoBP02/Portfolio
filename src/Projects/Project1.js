@@ -4,14 +4,19 @@ import { AiFillGithub } from "react-icons/ai";
 import { MdMonitor } from "react-icons/md";
 import img from "../images/fotoAnime.png";
 import { pr1 } from "../Components/datas";
+import SingleProject from "../MainComponents/SingleProject";
 
 const Project1 = () => {
   return (
-    <Wrapper id="projects">
+    <Wrapper>
       <h1>Projetos</h1>
       <div className="section-center project">
         <div>
-          <a href="https://animescomplete-reactjs.netlify.app" target="_blank">
+          <a
+            href="https://animescomplete-reactjs.netlify.app"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img src={img} alt="" className="project-img" />
           </a>
         </div>
@@ -26,26 +31,20 @@ const Project1 = () => {
               <a
                 href="https://github.com/DiegoBP02/animeReactjs-2.0"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 <AiFillGithub className="icon marginRight" />
               </a>
               <a
                 href="https://animescomplete-reactjs.netlify.app"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 <MdMonitor className="icon" />
               </a>
             </div>
           </div>
-          {pr1.map((msg) => {
-            const { feat, desc } = msg;
-            return (
-              <>
-                {feat ? <p className="feat">{feat}</p> : null}
-                {desc ? <p className="desc">{desc}</p> : null}
-              </>
-            );
-          })}
+          <SingleProject data={pr1} />
         </div>
       </div>
     </Wrapper>
@@ -100,7 +99,7 @@ const Wrapper = styled.div`
   .marginRight {
     margin-right: 0.5rem;
   }
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 820px) {
     .project {
       display: flex;
       flex-direction: column;

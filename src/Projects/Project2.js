@@ -4,6 +4,7 @@ import { AiFillGithub } from "react-icons/ai";
 import { MdMonitor } from "react-icons/md";
 import img from "../images/fotoComfy.png";
 import { pr2 } from "../Components/datas";
+import SingleProject from "../MainComponents/SingleProject";
 
 const Project2 = () => {
   return (
@@ -17,27 +18,30 @@ const Project2 = () => {
               <span className="sec-span">CSS</span>
             </div>
             <div>
-              <a href="https://github.com/DiegoBP02/reactComfy" target="_blank">
+              <a
+                href="https://github.com/DiegoBP02/reactComfy"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <AiFillGithub className="icon marginRight" />
               </a>
-              <a href="https://comfy-reactjs.netlify.app" target="_blank">
+              <a
+                href="https://comfy-reactjs.netlify.app"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <MdMonitor className="icon" />
               </a>
             </div>
           </div>
-          <p className="feat"></p>
-          {pr2.map((msg) => {
-            const { feat, desc } = msg;
-            return (
-              <>
-                {feat ? <p className="feat">{feat}</p> : null}
-                {desc ? <p className="desc">{desc}</p> : null}
-              </>
-            );
-          })}
+          <SingleProject data={pr2} />
         </div>
         <div>
-          <a href="https://comfy-reactjs.netlify.app" target="_blank">
+          <a
+            href="https://comfy-reactjs.netlify.app"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img src={img} alt="" className="project-img" />
           </a>
         </div>
@@ -95,7 +99,7 @@ const Wrapper = styled.div`
   .marginRight {
     margin-right: 0.5rem;
   }
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 820px) {
     .project {
       display: flex;
       flex-direction: column;

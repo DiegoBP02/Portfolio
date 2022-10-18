@@ -4,27 +4,28 @@ import { AiFillGithub } from "react-icons/ai";
 export const links = [
   {
     id: 1,
-    url: "#nav",
+    url: "main",
     text: "Início",
   },
   {
     id: 2,
-    url: "#about",
+    url: "about",
     text: "Sobre",
   },
   {
     id: 3,
-    url: "#skills",
+    url: "skills",
     text: "Habilidades",
+    off: -200,
   },
   {
     id: 4,
-    url: "#projects",
+    url: "projects",
     text: "Projetos",
   },
   {
     id: 5,
-    url: "#contact",
+    url: "contact",
     text: "Contato",
   },
 ];

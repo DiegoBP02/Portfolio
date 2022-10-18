@@ -28,28 +28,6 @@ const App = () => {
           },
         },
         fpsLimit: 120,
-        interactivity: {
-          events: {
-            onClick: {
-              enable: false,
-              mode: "push",
-            },
-            onHover: {
-              enable: false,
-              mode: "repulse",
-            },
-            resize: false,
-          },
-          modes: {
-            push: {
-              quantity: 4,
-            },
-            repulse: {
-              distance: 400,
-              duration: 0.4,
-            },
-          },
-        },
         particles: {
           number: {
             value: 60,

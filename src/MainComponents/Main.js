@@ -4,7 +4,7 @@ import img from "../images/ft1.png";
 
 const Main = () => {
   return (
-    <Wrapper>
+    <Wrapper id="main">
       <div className="section-center container">
         <div className=" intro">
           <h5>Olá, meu nome é</h5>
@@ -32,7 +32,7 @@ const Wrapper = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 1rem;
+    margin-top: 0;
   }
   .right {
     margin-right: 0.5rem;
@@ -67,6 +67,7 @@ const Wrapper = styled.div`
     .img-container {
       display: none;
     }
+    margin-top: 1rem;
   }
   @media screen and (max-width: 480px) {
     .img-container {

@@ -1,17 +1,21 @@
 import React from "react";
-import Particles from "./MainComponents/Particles";
-import Navbar from "./MainComponents/Navbar";
-import Main from "./MainComponents/Main";
-import About from "./MainComponents/About";
-import Skills from "./MainComponents/Skills";
-import Portfolio from "./MainComponents/Portfolio";
-import Contact from "./MainComponents/Contact";
-import Footer from "./MainComponents/Footer";
+import {
+  Particles,
+  Main,
+  About,
+  Skills,
+  Portfolio,
+  Contact,
+  Footer,
+  Navbar,
+  Button,
+} from "./MainComponents/index";
 
 function App() {
   return (
     <>
       <Particles />
+      {/* <Navbar /> */}
       <Navbar />
       <Main />
       <About />
@@ -19,6 +23,7 @@ function App() {
       <Portfolio />
       <Contact />
       <Footer />
+      <Button />
     </>
   );
 }

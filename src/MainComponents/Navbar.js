@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
-import { FaBars, FaTwitter } from "react-icons/fa";
+import { FaBars } from "react-icons/fa";
 import { links, social } from "../Components/data";
+import { Link } from "react-scroll";
 import styled from "styled-components";
 
 const Navbar = () => {
@@ -16,8 +17,9 @@ const Navbar = () => {
       linksContainerRef.current.style.height = "0px";
     }
   }, [showLinks]);
+
   return (
-    <Wrapper id="nav">
+    <Wrapper id="nav" className="nav">
       <nav>
         <div className="nav-center">
           <div className="nav-header">
@@ -33,10 +35,17 @@ const Navbar = () => {
           <div className="links-container" ref={linksContainerRef}>
             <ul className="links" ref={linksRef}>
               {links.map((link) => {
-                const { id, url, text } = link;
+                const { id, url, text, off } = link;
                 return (
                   <li key={id}>
-                    <a href={url}>{text}</a>
+                    <Link
+                      activeClass="active"
+                      smooth
+                      to={url}
+                      offset={off ? off : 0}
+                    >
+                      {text}
+                    </Link>
                   </li>
                 );
               })}
@@ -48,7 +57,9 @@ const Navbar = () => {
               const { id, url, icon } = socialIcon;
               return (
                 <li key={id}>
-                  <a href={url}>{icon}</a>
+                  <a href={url} target="_blank" rel="noopener noreferrer">
+                    {icon}
+                  </a>
                 </li>
               );
             })}
@@ -72,14 +83,14 @@ const Wrapper = styled.div`
   }
   .nav-toggle {
     font-size: 1.5rem;
-    color: #d23669;
+    color: var(--clr-grey-9);
     background: transparent;
     border-color: transparent;
     transition: var(--transition);
     cursor: pointer;
   }
   .nav-toggle:hover {
-    color: var(--clr-primary-1);
+    color: #6aa3cd;
     transform: rotate(90deg);
   }
   .logo {
@@ -87,6 +98,8 @@ const Wrapper = styled.div`
     margin-bottom: 0;
     color: var(--clr-grey-9);
     letter-spacing: var(--spacing);
+    transition: var(--transition);
+    cursor: pointer;
   }
   .links a {
     color: var(--clr-grey-9);
@@ -114,6 +127,11 @@ const Wrapper = styled.div`
     height: 10rem;
   }
   @media screen and (min-width: 800px) {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    background-color: #0003;
     .nav-center {
       max-width: 1170px;
       margin: 0 auto;
@@ -127,6 +145,9 @@ const Wrapper = styled.div`
     }
     .nav-toggle {
       display: none;
+    }
+    a {
+      cursor: pointer;
     }
     .links-container {
       height: auto !important;
@@ -150,8 +171,14 @@ const Wrapper = styled.div`
       color: var(--clr-grey-9);
       transition: var(--transition);
     }
-    .social-icons a:hover {
-      color: var(--clr-primary-7);
+    .social-icons a:hover,
+    .links a:hover,
+    .logo:hover {
+      color: #6aa3cd;
+    }
+    .active {
+      color: #011a45;
+      transform: scale(1.2);
     }
   }
 `;

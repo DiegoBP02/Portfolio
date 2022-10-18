@@ -2,8 +2,9 @@ import React from "react";
 import styled from "styled-components";
 import { AiFillGithub } from "react-icons/ai";
 import { MdMonitor } from "react-icons/md";
-import img from "../images/fotoGithub.png";
+import img from "../images/fotoJobster.png";
 import { pr3 } from "../Components/datas";
+import SingleProject from "../MainComponents/SingleProject";
 
 const Project3 = () => {
   return (
@@ -11,37 +12,37 @@ const Project3 = () => {
       <div className="section-center project">
         <div>
           <a
-            href="https://github-search-learning-reactjs.netlify.app"
+            href="https://jobster-redux.netlify.app"
             target="_blank"
+            rel="noopener noreferrer"
           >
             <img src={img} alt="" className="project-img" />
           </a>
         </div>
         <div className="project-desc">
-          <p className="title">GitHub User</p>
+          <p className="title">Jobster</p>
           <div className="icons">
             <div>
               <span>React</span>
               <span className="sec-span">CSS</span>
+              <span className="sec-span">Redux</span>
             </div>
             <div>
-              <a href="https://github.com/DiegoBP02/githubUsers-reactjs">
+              <a
+                href="https://github.com/DiegoBP02/jobsterReactRedux"
+                rel="noopener noreferrer"
+              >
                 <AiFillGithub className="icon marginRight" />
               </a>
-              <a href="https://github-search-learning-reactjs.netlify.app">
+              <a
+                href="https://jobster-redux.netlify.app"
+                rel="noopener noreferrer"
+              >
                 <MdMonitor className="icon" />
               </a>
             </div>
           </div>
-          {pr3.map((msg) => {
-            const { feat, desc } = msg;
-            return (
-              <>
-                {feat ? <p className="feat">{feat}</p> : null}
-                {desc ? <p className="desc">{desc}</p> : null}
-              </>
-            );
-          })}
+          <SingleProject data={pr3} />
         </div>
       </div>
     </Wrapper>
@@ -97,7 +98,7 @@ const Wrapper = styled.div`
   .marginRight {
     margin-right: 0.5rem;
   }
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 820px) {
     .project {
       display: flex;
       flex-direction: column;

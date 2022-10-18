@@ -5,9 +5,7 @@ import { DiCss3, DiHtml5, DiJavascript, DiReact } from "react-icons/di";
 const Skills = () => {
   return (
     <Wrapper id="skills">
-      <h1>
-        <h1>Minhas habilidades</h1>
-      </h1>
+      <h1>Minhas habilidades</h1>
       <div className="section-center container">
         <div className="stack">
           <DiHtml5 className="html" />
