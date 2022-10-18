@@ -1,12 +1,17 @@
 import React from "react";
-import { Project1, Project2, Project3 } from "../Projects/index";
+import SingleProjectComponent from "../Projects/SingleProjectComponent";
+import {
+  dataProject1,
+  dataProject2,
+  dataProject3,
+} from "../Projects/dataProjects";
 
 const Portfolio = () => {
   return (
     <div id="projects">
-      <Project1 />
-      <Project2 />
-      <Project3 />
+      <SingleProjectComponent data={dataProject1} />
+      <SingleProjectComponent data={dataProject2} />
+      <SingleProjectComponent data={dataProject3} />
     </div>
   );
 };

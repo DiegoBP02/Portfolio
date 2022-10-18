@@ -23,7 +23,13 @@ const Navbar = () => {
       <nav>
         <div className="nav-center">
           <div className="nav-header">
-            <p className="logo">Portfolio</p>
+            <a
+              href="https://github.com/DiegoBP02/Portfolio"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <p className="logo">Portfolio</p>
+            </a>
             <button
               className="nav-toggle"
               onClick={() => setShowLinks(!showLinks)}

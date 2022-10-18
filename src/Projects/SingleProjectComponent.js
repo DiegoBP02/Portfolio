@@ -2,49 +2,52 @@ import React from "react";
 import styled from "styled-components";
 import { AiFillGithub } from "react-icons/ai";
 import { MdMonitor } from "react-icons/md";
-import img from "../images/fotoAnime.png";
-import { pr1 } from "../Components/datas";
 import SingleProject from "../MainComponents/SingleProject";
 
-const Project1 = () => {
+const SingleProjectComponent = ({ data }) => {
+  const {
+    ref,
+    refNetlify,
+    image,
+    title,
+    spans,
+    projectData,
+    reverse,
+    titleProject,
+  } = data;
   return (
     <Wrapper>
-      <h1>Projetos</h1>
-      <div className="section-center project">
+      <h1>{titleProject ? "Projetos" : null}</h1>
+      <div
+        className={
+          reverse
+            ? "section-center project reverse-row"
+            : "section-center project"
+        }
+      >
         <div>
-          <a
-            href="https://animescomplete-reactjs.netlify.app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img src={img} alt="" className="project-img" />
+          <a href={refNetlify} target="_blank" rel="noopener noreferrer">
+            <img src={image} alt="" className="project-img" />
           </a>
         </div>
         <div className="project-desc">
-          <p className="title">Animes Coding</p>
+          <p className="title">{title}</p>
           <div className="icons">
             <div>
-              <span>React</span>
-              <span className="sec-span">CSS</span>
+              {spans.map((msg, index) => {
+                return <span key={index}>{msg}</span>;
+              })}
             </div>
             <div>
-              <a
-                href="https://github.com/DiegoBP02/animeReactjs-2.0"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <a href={ref} target="_blank" rel="noopener noreferrer">
                 <AiFillGithub className="icon marginRight" />
               </a>
-              <a
-                href="https://animescomplete-reactjs.netlify.app"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <a href={refNetlify} target="_blank" rel="noopener noreferrer">
                 <MdMonitor className="icon" />
               </a>
             </div>
           </div>
-          <SingleProject data={pr1} />
+          <SingleProject data={projectData} />
         </div>
       </div>
     </Wrapper>
@@ -72,9 +75,10 @@ const Wrapper = styled.div`
     font-weight: 600;
     border-radius: var(--radius);
     color: black;
-  }
-  .sec-span {
     margin-left: 0.5rem;
+  }
+  span:first-child {
+    margin-left: 0;
   }
   .project-desc {
     padding: 2rem;
@@ -98,6 +102,9 @@ const Wrapper = styled.div`
   }
   .marginRight {
     margin-right: 0.5rem;
+  }
+  .reverse-row {
+    flex-direction: row-reverse;
   }
   @media screen and (max-width: 820px) {
     .project {
@@ -133,7 +140,10 @@ const Wrapper = styled.div`
     h1 {
       margin-bottom: 3rem;
     }
+    .reverse-row {
+      flex-direction: column;
+    }
   }
 `;
 
-export default Project1;
+export default SingleProjectComponent;

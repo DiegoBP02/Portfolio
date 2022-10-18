@@ -180,3 +180,11 @@ p {
   color: var(--clr-primary-1);
   background: var(--clr-primary-7);
 }
+
+/* projects */
+
+.desc {
+  margin-bottom: 0;
+  font-size: 1rem;
+  font-weight: bold;
+}
