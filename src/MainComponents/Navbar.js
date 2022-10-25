@@ -137,14 +137,14 @@ const Wrapper = styled.div`
     top: 0;
     width: 100%;
     z-index: 100;
-    background-color: #0003;
+    background-color: #0006;
     .nav-center {
       max-width: 1170px;
       margin: 0 auto;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 1rem;
+      padding: 1rem 0;
     }
     .nav-header {
       padding: 0;
