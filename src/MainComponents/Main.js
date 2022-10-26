@@ -15,7 +15,7 @@ const Main = () => {
             Estou à procura de uma oportunidade como estagiário na área de TI
           </p>
           <div className="intro-project">
-            <Link smooth to="projects" className="btn right">
+            <Link smooth to="projects" offset={-64} className="btn right">
               Veja meus projetos
             </Link>
           </div>
