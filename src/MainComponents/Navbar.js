@@ -187,9 +187,14 @@ const Wrapper = styled.div`
       transform: scale(1.2);
     }
   }
-  @media screen and (min-width: 800px) and (max-width: 1220px) {
+  @media screen and (min-width: 991px) and (max-width: 1220px) {
     .nav-center {
-      padding: 1rem;
+      width: 95vw;
+    }
+  }
+  @media screen and (min-width: 800px) and (max-width: 991px) {
+    .nav-center {
+      width: 90vw;
     }
   }
 `;
