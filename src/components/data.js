@@ -11,6 +11,7 @@ export const links = [
     id: 2,
     url: "about",
     text: "Sobre",
+    off: -64,
   },
   {
     id: 3,
@@ -22,6 +23,7 @@ export const links = [
     id: 4,
     url: "projects",
     text: "Projetos",
+    off: -64,
   },
   {
     id: 5,

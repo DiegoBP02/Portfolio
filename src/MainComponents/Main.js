@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import img from "../images/ft1.png";
+import { Link } from "react-scroll";
 
 const Main = () => {
   return (
@@ -14,9 +15,9 @@ const Main = () => {
             Estou à procura de uma oportunidade como estagiário na área de TI
           </p>
           <div className="intro-project">
-            <a href="#portfolio" className="btn right">
+            <Link smooth to="projects" className="btn right">
               Veja meus projetos
-            </a>
+            </Link>
           </div>
         </div>
         <div className="img-container">
@@ -48,6 +49,10 @@ const Wrapper = styled.div`
   .intro {
     transition: var(--animation);
     transform: translateZ(0);
+  }
+  .btn:hover {
+    background-color: #6aa3cd;
+    color: var(--clr-grey-9);
   }
   @keyframes move {
     50% {
