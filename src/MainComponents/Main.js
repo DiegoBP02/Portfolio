@@ -79,6 +79,9 @@ const Wrapper = styled.div`
       display: none;
     }
   }
+  @media screen and (min-width: 800px) and (max-width: 820px) {
+    margin-top: 5rem;
+  }
 `;
 
 export default Main;

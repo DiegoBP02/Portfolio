@@ -187,6 +187,11 @@ const Wrapper = styled.div`
       transform: scale(1.2);
     }
   }
+  @media screen and (min-width: 800px) and (max-width: 1220px) {
+    .nav-center {
+      padding: 1rem;
+    }
+  }
 `;
 
 export default Navbar;
