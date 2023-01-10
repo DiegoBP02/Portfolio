@@ -1,7 +1,7 @@
-import { pr1, pr2, pr3 } from "../Components/datas";
+import { pr1, pr2, pr3 } from "./dataDesc";
 import { imgProject1, imgProject2, imgProject3 } from "../images/index";
 
-export const dataProject1 = {
+export const firstProjectReact = {
   ref: "https://github.com/DiegoBP02/animeReactjs-2.0",
   refNetlify: "https://animescomplete-reactjs.netlify.app",
   image: imgProject1,
@@ -11,7 +11,7 @@ export const dataProject1 = {
   titleProject: true,
 };
 
-export const dataProject2 = {
+export const secondProjectReact = {
   ref: "https://github.com/DiegoBP02/reactComfy",
   refNetlify: "https://comfy-reactjs.netlify.app",
   image: imgProject2,
@@ -21,7 +21,7 @@ export const dataProject2 = {
   reverse: true,
 };
 
-export const dataProject3 = {
+export const thirdProjectReact = {
   ref: "https://github.com/DiegoBP02/jobsterReactRedux",
   refNetlify: "https://jobster-redux.netlify.app",
   image: imgProject3,

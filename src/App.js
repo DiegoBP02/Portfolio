@@ -15,7 +15,6 @@ function App() {
   return (
     <>
       <Particles />
-      {/* <Navbar /> */}
       <Navbar />
       <Main />
       <About />
