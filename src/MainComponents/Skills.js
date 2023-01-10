@@ -1,25 +1,38 @@
 import React from "react";
 import styled from "styled-components";
-import { DiCss3, DiHtml5, DiJavascript, DiReact } from "react-icons/di";
+import {
+  DiCss3,
+  DiHtml5,
+  DiJavascript,
+  DiReact,
+  DiNodejsSmall,
+  DiMongodb,
+} from "react-icons/di";
 
 const Skills = () => {
   return (
     <Wrapper id="skills">
       <h1>Minhas habilidades</h1>
-      <div className="section-center container">
-        <div className="stack">
+      <section className="section-center container">
+        <article className="stack">
           <DiHtml5 className="html" />
-        </div>
-        <div className="stack">
+        </article>
+        <article className="stack">
           <DiCss3 className="css" />
-        </div>
-        <div className="stack">
+        </article>
+        <article className="stack">
           <DiJavascript className="js" />
-        </div>
-        <div className="stack">
+        </article>
+        <article className="stack">
           <DiReact className="react" />
-        </div>
-      </div>
+        </article>
+        <article className="stack">
+          <DiNodejsSmall className="node" />
+        </article>
+        <article className="stack">
+          <DiMongodb className="mongodb" />
+        </article>
+      </section>
     </Wrapper>
   );
 };
@@ -36,7 +49,7 @@ const Wrapper = styled.div`
   }
   .stack {
     font-size: 5rem;
-    margin: 1.5rem 3rem;
+    margin: 1.5rem 2.5rem;
   }
   .html {
     color: #e44d26;
@@ -49,6 +62,12 @@ const Wrapper = styled.div`
   }
   .react {
     color: #61dbfb;
+  }
+  .node {
+    color: #80bd41;
+  }
+  .mongodb {
+    color: #4fb23e;
   }
   @media screen and (max-width: 480px) {
     h1 {
