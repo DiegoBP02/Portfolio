@@ -202,7 +202,8 @@ p {
   margin: 0 auto;
 }
 
-.btns button {
+.btns button,
+.sendBtn button {
   padding: 0.325rem 0.5rem;
   border: none;
   background-color: var(--clr-grey-9);
@@ -220,6 +221,14 @@ p {
 .btns .active {
   background: transparent;
   color: var(--clr-grey-9);
+}
+.sendBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sendBtn button {
+  border-radius: var(--radius);
 }
 
 @media screen and (max-width: 820px) {

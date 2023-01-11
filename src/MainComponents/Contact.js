@@ -33,6 +33,9 @@ const Contact = () => {
               required
               className="inputBox"
             ></textarea>
+            <div className="sendBtn">
+              <button type="submit">Enviar</button>
+            </div>
           </form>
         </div>
       </section>

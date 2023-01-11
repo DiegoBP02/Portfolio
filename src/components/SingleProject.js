@@ -5,7 +5,7 @@ import SingleProject from "./Description";
 import Wrapper from "../assets/Wrappers/SingleProject";
 
 const SingleProjectComponent = ({ data }) => {
-  return data.map((singleData) => {
+  return data.map((singleData, index) => {
     const {
       ref,
       refLive,
@@ -17,7 +17,7 @@ const SingleProjectComponent = ({ data }) => {
     } = singleData;
 
     return (
-      <Wrapper>
+      <Wrapper key={index}>
         <div
           className={
             reverse
