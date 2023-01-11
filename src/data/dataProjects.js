@@ -53,7 +53,7 @@ export const projectsReact = [
       {
         id: 2,
         feat:
-          "É possível adicionar um método de pagamento, em que o usuário precisa estar logado para prosseguir com a compra. Possível filtrar e alterar a ordenação dos produtos. Além disso, há um carrinho de compras, sendo possível selecionar os itens por suas cores.",
+          "Possui integração com o Stripe, permitindo a adição de um método de pagamento. É possível filtrar e alterar a ordem dos produtos. Além disso, há um carrinho de compras, sendo possível selecionar os itens por suas cores. Sistema de login feito através da integração com o Auth0",
         desc: "Desafios",
       },
       {
@@ -103,7 +103,7 @@ export const projectsNode = [
     projectData: [
       {
         id: 1,
-        feat: "API de um e-Commerce",
+        feat: "API de um e-Commerce.",
         desc: "Características",
       },
       {
@@ -158,13 +158,13 @@ export const projectMERN = [
     projectData: [
       {
         id: 1,
-        feat: "Lista de tarefas",
+        feat: "Lista de tarefas.",
         desc: "Características",
       },
       {
         id: 2,
         feat:
-          "Projeto que permite o usuário administrar a sua lista de tarefas, permitindo-o adicionar tarefas, editá-las, removê-las e categorizá-las em diferentes níveis de urgência. Além disso, há um sistema de paginação que é exibido quando há mais de 10 tarefas.Todos os dados ficam armazenados no MongoDB.",
+          "Projeto que permite o usuário administrar a sua lista de tarefas, permitindo-o adicionar tarefas, editá-las, removê-las e categorizá-las em diferentes níveis de urgência. Além disso, há um sistema de paginação que é exibido quando há mais de 10 tarefas. Todos os dados ficam armazenados no MongoDB.",
         desc: "Desafios",
       },
       {
@@ -183,13 +183,14 @@ export const projectMERN = [
     projectData: [
       {
         id: 1,
-        feat: "Lista de vagas de trabalho",
+        feat: "Lista de vagas de trabalho.",
         desc: "Características",
       },
       {
         id: 2,
         feat:
           "Projeto que permite o usuário gerenciar o estado das vagas de trabalho que ele aplicou, permitindo-o adicionar vagas com base no nome da empresa e a posição a qual ele aplicou. Além disso, é possível editar os detalhas da vaga e removê-la. Todos os dados ficam armazenados no MongoDB.",
+        desc: "Desafios",
       },
       {
         id: 3,
@@ -208,7 +209,7 @@ export const projectMERN = [
     projectData: [
       {
         id: 1,
-        feat: "Lista de vagas de trabalho",
+        feat: "Lista de vagas de trabalho.",
         desc: "Características",
       },
       {
