@@ -1,6 +1,6 @@
 import React from "react";
-import img from "../images/ft2.png";
-import { about } from "../data/dataDesc";
+import { programmer2 } from "../assets/images";
+import { about } from "../data/dataNavbar";
 import Wrapper from "../assets/Wrappers/About";
 
 const About = () => {
@@ -9,14 +9,14 @@ const About = () => {
       <h1>Sobre mim</h1>
       <section className="section-center container">
         <header className="img">
-          <img src={img} alt="dev" className="img-about" />
+          <img src={programmer2} alt="dev" className="img-about" />
         </header>
-        <artcle className="about-text">
+        <article className="about-text">
           {about.map((msg, index) => {
             const { txt } = msg;
             return <p key={index}>{txt}</p>;
           })}
-        </artcle>
+        </article>
       </section>
     </Wrapper>
   );

@@ -1,5 +1,5 @@
 import React from "react";
-import img from "../images/ft1.png";
+import { programmer1 } from "../assets/images";
 import { Link } from "react-scroll";
 import Wrapper from "../assets/Wrappers/Main";
 
@@ -21,7 +21,7 @@ const Main = () => {
           </div>
         </header>
         <section className="img-container">
-          <img src={img} alt="dev" className="img-intro" />
+          <img src={programmer1} alt="dev" className="img-intro" />
         </section>
       </section>
     </Wrapper>

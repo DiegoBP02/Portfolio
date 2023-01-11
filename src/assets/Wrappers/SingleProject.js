@@ -83,9 +83,7 @@ const Wrapper = styled.article`
     .project-desc {
       padding-top: 1rem;
     }
-    h1 {
-      margin-bottom: 3rem;
-    }
+
     .reverse-row {
       flex-direction: column;
     }
