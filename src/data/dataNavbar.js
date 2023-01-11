@@ -55,7 +55,7 @@ export const about = [
   {
     id: 2,
     txt:
-      "O escopo das minhas habilidades é majoritariamente desenvolvimento no frontend, baseando-se no desenvolvimento web utilizando React. Além disso, tenho experiência em HTML, CSS e JavaScript.",
+      "O escopo das minhas habilidades é majoritariamente desenvolvimento no front-end com ReactJS e desenvolvimento no back-end com NodeJS. Além disso, tenho experiência em HTML, CSS, JavaScript e MongoDB.",
   },
   {
     id: 3,
